@@ -310,7 +310,7 @@
         <span class="input-group-text border-0 bg-dark text-light" id="basic-addon1">Diplome</span>
         <select name="diplome" class="custom-select bg-secondary text-light" aria-label="diplome" required>
           <option value="0" selected></option>
-          <option value="Sans">Sans</option><
+          <option value="Sans">Sans</option>
           <option value="Bac">Bac</option>
           <option value="Bac+2">Bac+2</option>
           <option value="Bac+3">Bac+3</option>
