@@ -1,4 +1,5 @@
-<h1 class=" m-3 text-center"><iframe src="https://ntmaker.gfto.ru/newneontexten/?image_height=200&image_width=600&image_font_shadow_width=30&image_font_size=80&image_background_color=000000&image_text_color=8995FF&image_font_shadow_color=1622B1&image_url=&image_text=Merci d'avoir participé !&image_font_family=Nickainley&" frameborder='no' scrolling='no' width="600" height="250"></iframe></h1>
+<div class="container">
+<img src="assets\img\download (4).gif" width="1000" class="img-fluid text-center"  alt="Merci d'avoir participé !">
  <div class="container text-center text-light p-5">
  <h5 class="ml-4 size-text ">Bonjour <?= $firstname ?>  <?= $name ?></h5>
  <p class="ml-4 size-text">Recapitulatif de votre formulaire...</p>
@@ -17,4 +18,5 @@
         <li>Pour la question "Avez vous déjà eu une expérience avec la programmation et/ou l'informatique avant de remplir ce formulaire ?", vous avez repondu :  <?= $exp ?? 'Vous n\'avez rien mis'?></li>
  </ul>
  <img class="img-fluid ml-5 mt-5" src="assets\img\source.gif" alt="pulp fiction">
+</div>
 </div>
