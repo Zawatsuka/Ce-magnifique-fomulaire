@@ -1,6 +1,6 @@
 <body>
   <div class="container">
-    <h1 class=" m-3 text-center"><iframe src="https://ntmaker.gfto.ru/newneontexten/?image_height=200&image_width=600&image_font_shadow_width=30&image_font_size=80&image_background_color=000000&image_text_color=FF68FB&image_font_shadow_color=F73FAF&image_url=&image_text=Le Formulaire Incroyable !&image_font_family=Nickainley&" frameborder='no' scrolling='no' width="600" height="400"></iframe></h1>
+    <img src="assets\img\download.gif" width="1000" class="img-fluid text-center"  alt="le formulaire incroyable">
     <form method="POST">
 
       <!-- prenom + nom-->
@@ -22,8 +22,10 @@
         <input type="date" class="form-control bg-secondary text-light" name="Birthday" aria-label="Birthday" aria-describedby="basic-addon1"
           required>
         <?= $error['birthday'] ?? ''?>
+      </div>
 
-        <span class="input-group-text border-0 bg-dark text-light" id="basic-addon1">Pays de naissance</span>
+      <div class="input-group mb-3">
+      <span class="input-group-text border-0 bg-dark text-light" id="basic-addon1">Pays de naissance</span>
         <select name="country" class="custom-select bg-secondary text-light" aria-label="Default select example" required>
 
           <option value="France" selected>France </option>
@@ -293,13 +295,14 @@
         <input type="text" class="form-control bg-secondary text-light" pattern="[a-zA-Z -\D]+" name="nation" aria-label="firstname"
           title="Vous avez des chiffre dans votre nationnalité vous ?" aria-describedby="basic-addon1" required>
         <?= $error['nation'] ?? ''?>
+      </div>
 
-        <span class="input-group-text border-0 bg-dark text-light" id="basic-addon1">Adresse Mail</span>
+      <div class="input-group mb-3">
+      <span class="input-group-text border-0 bg-dark text-light" id="basic-addon1">Adresse Mail</span>
         <input type="text" class="form-control bg-secondary text-light" pattern="[a-z0-9.@-]+@[a-z0-9-]+.[a-z]{2,6}" name="mail"
           aria-label="Mail" aria-describedby="basic-addon1" title="Ce n'est pas correct !" required>
         <?= $error['mail'] ?? ''?>
       </div>
-
 
       <!-- telephone + diplome-->
       <div class="input-group mb-3">
@@ -325,7 +328,9 @@
         <input type="text" class="form-control bg-secondary text-light" pattern="[0-9]{7,12}[A-Z]{1,2}" name="poleEmploiNumber"
           aria-label="Name" aria-describedby="basic-addon1" required>
         <?= $error['poleEmploiNumber'] ?? ''?>
-        <span class="input-group-text border-0 bg-dark text-light" id="basic-addon1">Nombre de Badge</span>
+      </div>
+      <div class="input-group mb-3">
+      <span class="input-group-text border-0 bg-dark text-light" id="basic-addon1">Nombre de Badge</span>
         <input type="number" min="0" class="form-control bg-secondary text-light" name="badgeNumber" aria-label="Name"
           aria-describedby="basic-addon1" required>
       </div>
@@ -339,20 +344,20 @@
       </div>
 
       <!-- hero -->
-      <h5 class="text-light">Si vous étiez un super hero vous seriez qui et pourquoi ?</h5>
+      <h5 class="text-light size-change-question">Si vous étiez un super hero vous seriez qui et pourquoi ?</h5>
       <div class="input-group mb-3">
         <textarea class="form-control bg-secondary text-light" name="superHero" aria-label="With textarea" required></textarea>
       </div>
 
       <!-- hack  -->
-      <h5 class="text-light">Racontez-nous un de vos "hacks" (pas forcément technique ou informatique)</h5>
+      <h5 class="text-light size-change-question">Racontez-nous un de vos "hacks" (pas forcément technique ou informatique)</h5>
       <div class="input-group mb-3">
         <textarea class="form-control bg-secondary text-light" aria-label="With textarea" name="hack" required></textarea>
       </div>
 
 
       <!-- experience  -->
-        <h5 class="text-light">Avez vous déjà eu une expérience avec la programmation et/ou l'informatique avant de remplir ce formulaire ?</h5>
+        <h5 class="text-light size-change-question">Avez vous déjà eu une expérience avec la programmation et/ou l'informatique avant de remplir ce formulaire ?</h5>
       <div class="input-group mb-3">
         <textarea class="form-control bg-secondary text-light" aria-label="With textarea" name="exp" required></textarea>
       </div>
